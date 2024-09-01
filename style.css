@@ -1,0 +1,71 @@
+h3 {
+    color: white;
+}
+.header {
+    background-color: #545775;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
+    background-color: #545775;
+    
+}
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.background {
+    background-color: #DBCFB0;
+    padding: 10vh 25vh 10vh 25vh;
+}
+.aboutme {
+    width: 50%;
+    padding: 10vh;
+}
+.pictureandsocials {
+    width: 50%;
+    padding: 10vh;
+}
+button {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 15px;
+    background-color: #545775;
+    outline-color: #545775;
+    color: white;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45475F;
+}
+.signaturecontainer {
+    position:absolute;
+    left:50px;
+    top:20px;
+}
+.signature {
+    width: 175px;
+    height: auto;
+}
+footer {
+    background-color: #545775;
+    padding: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
