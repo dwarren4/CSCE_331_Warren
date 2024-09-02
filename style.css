@@ -1,5 +1,10 @@
-body {
+html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
 }
 h3 {
     color: #02040F;
@@ -23,6 +28,7 @@ h3 {
     min-width: 50vh;
     background-color: #E5DADA;
     border: 2px solid #02040F;
+    margin: 5vh;
     
 }
 .buttoncontainer {
@@ -36,7 +42,7 @@ h3 {
     background-color: #E5DADA;
     padding: 10vh 25vh 10vh 25vh;
 }
-.aboutme {
+.textcontainer {
     width: 50%;
     padding: 10vh;
 }
@@ -117,4 +123,110 @@ footer {
 }
 p {
     text-align: left;
+}
+.images {
+    width: 100%;
+    height: auto;
+}
+
+.ai-background {
+    background: linear-gradient(45deg, #002642, #840032, #E59500);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-crystal {
+    position: absolute;
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ai-shape {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transform: rotate(45deg);
+    mix-blend-mode: overlay;
+    animation: rotateShape 8s infinite linear;
+}
+
+.ai-shape1 {
+    top: 10%;
+    left: 30%;
+    animation-delay: 0s;
+}
+
+.ai-shape2 {
+    top: 20%;
+    left: 50%;
+    animation-delay: 1s;
+}
+
+.ai-shape3 {
+    top: 50%;
+    left: 70%;
+    animation-delay: 2s;
+}
+
+.ai-shape4 {
+    top: 80%;
+    left: 40%;
+    animation-delay: 3s;
+}
+
+.ai-shape5 {
+    top: 60%;
+    left: 20%;
+    animation-delay: 4s;
+}
+
+.ai-shape6 {
+    top: 30%;
+    left: 10%;
+    animation-delay: 5s;
+}
+
+@keyframes rotateShape {
+    0% {
+        transform: rotate(0deg) translateX(0);
+    }
+    50% {
+        transform: rotate(180deg) translateX(20px);
+    }
+    100% {
+        transform: rotate(360deg) translateX(0);
+    }
+}
+
+.ai-textbox {
+    position: relative;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 600px;
+}
+
+.ai-textbox h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #E6DBDB;
+}
+
+.ai-textbox p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #E6DBDB;
 }
